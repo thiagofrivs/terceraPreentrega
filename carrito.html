@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera Preentrega</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Iconos BootsTrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <aside>
+            <h1>Tienda de Componentes</h1>
+            <nav>
+                <ul class="cont-ul">
+                    <li><a class="boton-menu active" href="index.html">Inicio</a></li>
+                    <li><a class="boton-menu" href="carrito.html">Ir al carrito</a></li>
+                </ul>
+            </nav>
+
+            <p>2022 Thiago Santamaria ©</p>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">Carrito de Compras</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
+            
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Esto se rrelena con JS -->
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carito-acciones-izq">
+                        <button id="vaciar-carrito" class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                    </div>
+                    <div class="carrito-acciones der">
+                        <div class="carrito-acciones-total">
+                            <p>Total</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="boton-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra! <i class="bi bi-emoji-laughing"></i></p>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- JS -->
+    <script src="js/carrito.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
