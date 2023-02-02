@@ -53,6 +53,12 @@ const contenedorCarritoComprado=document.querySelector("#carrito-comprado")
 const textoTotal=document.querySelector("#total")
 const botonVaciar=document.querySelector("#vaciar-carrito")
 const botonComprar=document.querySelector("#boton-comprar")
+const inicio=document.getElementById("inicio")
+const carrito=document.getElementById("carrito")
+
+
+inicio.classList.remove("active")
+carrito.classList.add("active")
 
 console.log(productosEnCarrito)
 let total=0

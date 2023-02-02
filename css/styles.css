@@ -167,7 +167,7 @@ main{
 
 .carrito-acciones-vaciar{
     border: 0;
-    background-color: var(--clr-grey);
+    background-color: #a2a5a8;
     padding: 1rem;
     border-radius: 1rem;
     color: #5d6063;
